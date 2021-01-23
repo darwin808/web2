@@ -1,0 +1,131 @@
+@mixin card-small {
+    
+
+.cardImg{
+  
+    height: 100%;
+    width: 100%;
+overflow: hidden;
+
+transition: transform .2s;
+
+transition : all ease-in-out 0.2s;  
+
+    transform-origin:bottom;
+
+
+
+}
+
+.cardImg:hover{
+    transform: scale(1.5);
+}
+.card{
+    background-color: white;
+    overflow: hidden;
+    box-shadow: 1px 3px 10px  #888888;
+    border-radius: 10px;
+    cursor: pointer;
+    position: relative;
+    height: 30vh;
+    padding-bottom: 3rem;
+    
+}
+
+.cardBody{
+    
+    padding: 0.4rem .2rem;
+    font-size: 11px;
+}
+
+.tagging1{
+    
+    font-size: 15px;
+    position: absolute;
+    color: white;
+    background-color: #1B90F8;
+    padding: 0.4rem 0.5rem;
+    left: 10px;
+    bottom: 50px;
+    border-radius: 3px;
+
+}
+
+
+}
+
+
+
+
+@mixin card-pc {
+    
+
+
+.cardImg{
+  
+    height: 100%;
+    width: 100%;
+transition: transform .2s;
+
+transition : all ease-in-out 0.2s;  
+
+    transform-origin:bottom;
+
+}
+
+.cardImg:hover{
+    transform: scale(1.5);
+}
+.card{
+    background-color: white;
+    overflow: hidden;
+    box-shadow: 1px 3px 10px  #888888;
+    border-radius: 10px;
+    cursor: pointer;
+    position: relative;
+    height: 30vh;
+    padding-bottom: 3rem;
+ 
+    
+}
+
+.cardBody{
+    
+    padding: 0.4rem .2rem;
+    font-size: 11px;
+}
+
+.tagging1{
+    
+    font-size: 15px;
+    position: absolute;
+    color: white;
+    background-color: #1B90F8;
+    padding: 0.4rem 0.5rem;
+    left: 10px;
+    bottom: 55px;
+    border-radius: 3px;
+
+}
+
+
+}
+
+
+
+
+
+
+
+
+@media (min-width:220px) and (max-width:599px){ @include card-small()
+}
+
+@media (min-width:601px) and (max-width:2000px)  { @include card-pc()
+
+}
+
+
+
+
+

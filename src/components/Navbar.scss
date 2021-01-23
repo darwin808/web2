@@ -1,0 +1,148 @@
+$main-color: rgb(36,35,35);
+$text-color:#FFFEFF;
+.navbar.active{
+  background-color:rgb(36, 35, 35);
+}
+
+
+
+@mixin nav1 {
+  
+
+
+.navbar{
+background-color: transparent;
+width: 100%;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+color: $text-color;
+align-items: center;
+padding: 1rem 0;
+position: fixed;
+top: 0;
+left: 0;
+z-index: 99;
+
+
+
+
+.navheader{
+     margin-left: 5rem;
+     cursor: pointer;
+}
+
+.navlinks{
+    list-style: none;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin-right: 5rem;
+    
+    .navitems1{
+     margin: 0 1rem;
+     cursor: pointer;
+    }
+    
+
+ 
+
+    #btn{
+        padding: .5rem 1.5rem;
+        color: $text-color;
+        margin-right: 1rem;
+        background-color: $main-color;
+        border: 1px solid $text-color;
+        border-radius: 2px;
+        font-size: 15px;
+            cursor: pointer;
+    }
+
+}
+
+}
+
+}
+
+
+@mixin smallscreen {
+
+  .navlinks{
+    display: none;
+  }
+  
+.navlinks2{
+  display: none;
+  flex-direction: column;
+  list-style: none;
+  .navitems{
+    margin: 0.2rem 0;
+    cursor: pointer;
+  }
+
+
+  #btn{
+    margin: 0.2rem 0;
+    padding: 0.3rem 1rem;
+    background-color: $main-color;
+    color: $text-color;
+    border: 1px solid white;
+    cursor: pointer;
+    border-radius: 2px;
+  }
+}
+
+
+
+.navbar{
+background-color: none;
+width: 100%;
+display: flex;
+flex-direction: column;
+color: $text-color;
+align-items: center;
+text-align: center;
+padding: 1rem 0;
+position: fixed;
+top: 0;
+left: 0;
+z-index: 99;
+
+
+.fas{
+  position: absolute;
+  top:1.5rem;
+  right:1rem;
+  cursor: pointer;
+}
+
+
+
+
+.navheader{
+     cursor: pointer;
+}
+
+
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width:220px) and (max-width:599px){ @include smallscreen()
+}
+
+@media (min-width:601px) and (max-width:2000px)  {  @include nav1()}

@@ -1,0 +1,275 @@
+
+@mixin foo-pc {
+    
+
+
+.body6{
+    height: 100vh;
+    background-color: rgb(36,35,35);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   
+
+
+
+
+
+
+.header-body6{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-items: center;
+    align-items: center;
+    margin: 1rem auto 4rem auto;
+}
+
+.para1-body6{
+    font-size: 2rem;
+    margin-bottom: 2rem;
+
+}
+
+.para2-body6{
+    margin-bottom: 1.5rem;
+}
+
+.btn-holder{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.input1{
+    margin-right: 10px;
+}
+
+.body-body6{
+    display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+
+}
+
+.about-foo{
+    font-size: 1.5rem;
+    margin-bottom: .5rem;
+}
+.foochild{
+    font-size: 13px;
+    margin-bottom: .5rem;
+}
+
+.foo-body6{
+    margin-top: 10rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.foo-subheader{
+    font-size: 15px;
+}
+.foo-header{
+    font-size: 2rem;
+}
+
+.socmedia{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.fab{
+    margin: auto 1rem;
+}
+
+.btnBody6{
+    padding: .4rem 1.2rem;
+    color: white;
+    background-color: #201F20 ;
+    border: 1px solid white;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+@mixin foo-small {
+    
+
+
+.body6{
+    height: 100vh;
+    background-color: rgb(36,35,35);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding-top: 3rem;
+    justify-content: center;
+
+
+
+
+
+
+.header-body6{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-items: center;
+    align-items: center;
+
+
+
+        .para1-body6{
+            font-size: 1rem;
+            margin-bottom: 1rem;
+            margin-top: 1rem;
+            
+
+        }
+
+            .para2-body6{
+                margin-bottom: 1rem;
+                font-size: .7rem;
+            }
+
+            .btn-holder{
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                align-items: center;
+                margin-bottom: 1rem;
+                
+            }
+
+            .input1{
+               margin-bottom: 1rem;
+            }
+
+
+
+
+
+}
+
+  
+
+
+    .body-body6{
+        display: flex;
+        flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ 
+
+
+
+                .about-foo{
+                    font-size: 1rem;
+                    margin-bottom: .5rem;
+                }
+                .foochild{
+                    display: none;
+                    font-size: 13px;
+                    margin-bottom: .5rem;
+                }
+    }
+
+
+
+.foo-body6{
+    margin-top: 10rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+
+
+
+            .foo-subheader{
+                font-size: 15px;
+                display: none;
+            }
+            .foo-header{
+                font-size: 2rem;
+            }
+
+            .socmedia{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+            }
+
+            .fab{
+                margin: auto 0.7rem;
+            }
+
+            .btnBody6{
+                padding: .4rem 1.2rem;
+                color: white;
+                background-color: #201F20 ;
+                border: 1px solid white;
+                border-radius: 2px;
+                cursor: pointer;
+            }
+
+
+
+
+
+
+}
+
+
+
+
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width:220px) and (max-width:599px){ @include foo-small()
+}
+
+@media (min-width:601px) and (max-width:2000px)  { @include foo-pc()
+
+}
+
+
+
+
